@@ -1,0 +1,16 @@
+// global scss files imports
+@import "./nullstyle";
+@import "./variables";
+@import "./style";
+// sections or pages scss files imports
+@import "./partials/header";
+@import "./partials/section-underheader";
+@import "./partials/success";
+@import "./partials/mediabar";
+@import "./partials/blackforest";
+@import "./partials/partnersbar";
+@import "./partials/getinformation";
+@import "./partials/press";
+@import "./partials/wherework";
+@import "./partials/footer";
+

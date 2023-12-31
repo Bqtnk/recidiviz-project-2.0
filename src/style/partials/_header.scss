@@ -1,0 +1,257 @@
+.header {
+    @media screen and (max-width: $breakpoint1450){
+        padding: 20px 64px 0px 64px;
+    }
+    @media screen and (max-width: $breakpoint768){
+        padding: 17px 20px 0px 20px
+    } 
+    padding: 17px 60px 40px 60px;
+    background: url('/img/IMAGE.jpg') no-repeat center center scroll;
+    background-size: cover;
+    height: 776px;
+    // .header__title
+    &__body{
+        max-width: 800px;
+        padding-top: 150px;
+        @media screen and (max-width: $breakpoint1450){
+            max-width: 600px;
+            padding-top: 120px;
+        }
+        @media screen and (max-width: $breakpoint992){
+            max-width: 500px;
+        }
+        @media screen and (max-width: $breakpoint768){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            max-width: 100%;
+            padding-top: 60px;
+        }
+        @media screen and (max-width: $breakpoint480){
+            padding-top: 40px;
+        }
+    }
+    &__title {
+        color: #FFF;
+        font-family: $fontSecondary;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 1.2px;
+        @media screen and (max-width: $breakpoint1450){
+            font-size: 38px;
+        }
+        @media screen and (max-width: $breakpoint992){
+            font-size: 35px;
+        }
+        @media screen and (max-width: $breakpoint768){
+            font-size: 32px;
+        }
+        
+    }
+
+    // .header__desc
+
+    &__desc {
+        padding-top: 33px;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+        @media screen and (max-width: $breakpoint1450){
+            font-size: 18px;
+        }
+        @media screen and (max-width: $breakpoint992){
+            font-size: 16px;
+        }
+        @media screen and (max-width: $breakpoint768){
+            font-size: 14px;
+            margin-bottom: 33px;
+        }
+    }
+
+    // .header__btn
+
+
+    // .header__btn-link
+
+    &__btn {
+        padding: 19px 36px;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02px;
+        margin-top: 33px;
+        display: inline-block;
+        border-radius: 80px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        @media screen and (max-width: $breakpoint1450){
+            font-size: 13px;
+            padding: 17px 33px;
+        }
+        @media screen and (max-width: $breakpoint768){
+            justify-content: center;
+            padding: 19px 36px;
+            margin-top: 10px;
+        }
+        @media screen and (max-width: $breakpoint480){
+            margin-top: 0px;
+        }
+        &:hover{
+            background-color: rgba(138, 138, 138, 0.315);
+            transition: all .2s linear;
+            border: 1px solid rgba(138, 138, 138, 0.315);
+        }
+        &:active{
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.616);
+            border: 1px solid rgba(255, 255, 255, 0.616);
+        }
+    }
+
+    // .header__list-state
+
+    &__list-state {
+        padding-top: 100px;
+        @media screen and (max-width: $breakpoint1450){
+            padding-top: 60px;
+        }
+        @media screen and (max-width: $breakpoint768){
+            padding-top: 50px;
+        }
+        @media screen and (max-width: $breakpoint480){
+            padding-top: 25px;
+        }
+    }
+    &__list-state-title{
+        color: #FFF;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 33px;
+        @media screen and (max-width: $breakpoint768){
+            justify-content: center;
+        }
+        @media screen and (max-width: $breakpoint480){
+            margin-bottom: 13px;
+        }
+    }
+
+    &__list-state-body{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $breakpoint1450){
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        @media screen and (max-width: $breakpoint992){
+            justify-content: space-between;
+        }
+        @media screen and (max-width: $breakpoint768){
+            justify-content: center;
+            gap: 40px;
+        }
+        @media screen and (max-width: $breakpoint480){
+            gap: 20px;   
+        }
+    }
+    &__list-state-item{
+        max-width: 200px;
+        width: 100%;     
+        @media screen and (max-width: $breakpoint992){
+            max-width: 80px;
+        }
+        @media screen and (max-width: $breakpoint768){
+            max-width: 120px;
+            text-align: center;
+        }
+        
+    }
+    &__hr{
+        margin-bottom: 20px;
+    }
+    &__list-state-item-link{
+        color: #FFF;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        @media screen and (max-width: $breakpoint1450){
+            font-size: 15px;
+        }
+        @media screen and (max-width: $breakpoint768){
+            line-height: 0px;
+        }
+        
+        
+        // &:before{
+        //     content: " ";
+        //     background: rgba(255, 255, 255, 0.60);
+        //     width: 230px;
+        //     height: 1px;
+        //     top: 670px;
+        //     position: absolute;
+        // }
+        &:hover{
+            transition: all .2s linear;
+            color: #cdd4ca;
+        }
+        &:active{
+            color: rgb(109, 119, 102);
+        }
+    }
+    
+}
+.nav {
+    display: flex;
+    // .nav__links
+    justify-content: space-between;
+    text-align: center;
+
+    &__navbar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 51px;
+        @media screen and (max-width: $breakpoint768){
+            display: none;
+        } 
+    }
+
+    // .nav__link
+
+    &__link {
+        color: #FFF;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        @media screen and (max-width: $breakpoint1450){
+            font-size: 15px;
+        }
+        @media screen and (max-width: $breakpoint768){
+            display: none;
+        } 
+        &:hover{
+            transition: all .2s linear;
+            color: #cdd4ca;
+
+        }
+        &:active{
+            color: rgb(109, 119, 102);
+        }
+    }
+    &__item{
+        display: flex;
+    }
+    &__logo{
+        width: auto;
+        max-width: 100%;
+        @media screen and (max-width: $breakpoint768){
+            
+        } 
+    }
+}
